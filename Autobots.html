@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobots</title>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link  rel="stylesheet" type="text/css" href="Diseño.css">
+</head>
+
+<script>
+    let index = 0;
+    function moveSlide(step) {
+        const carousel = document.querySelector(".carousel");
+        const images = document.querySelectorAll(".carousel-image");
+        index = (index + step + images.length) % images.length;
+        carousel.style.transform = `translateX(${-index * 100}%)`;
+    }
+</script>
+
+<body class="fondo1">
+    
+    <!-- Menú de la página -->
+    <div class="menu">
+        <ul>
+            <a href="Principal.html"><img id="banner" class="banner" src="img/banner.png"></a>
+            <li>
+                <a href="#">Facciones</a>
+                <ul class="submenu">
+                    <li><a href="Autobots.html"><img id="icon" class="icon" src="img/auto.png"> Autobots</a></li>
+                    <li><a href="Decepticons.html"><img id="icon" class="icon" src="img/decep.png"> Decepticons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Peliculas.html">Películas</a>
+            </li>
+            <li><a href="Comentarios.html">Comentarios</a></li>
+            
+        </ul>
+    </div>
+    <!-- Fin menú -->
+     <div class="cuerpo">
+        <h1 class="titulo">Autobots</h1>
+        <pre class="texto">
+            Los Autobots son una de las facciones principales en los mitos de Transformers. Por lo general, se 
+            encuentran defendiendo su propia raza así como a otras especies de los <a href="Decepticons.html">Decepticons</a> y luchando por la justicia 
+            y libertad en toda la galaxia.
+        </pre>
+        <table class="tabla">
+            <tr>
+                <th id="auto">Insignia Autobot</th>
+            </tr>
+            <tr>
+                <td><img width="100px" height="100px" src="img/autologo.png"></td>
+            </tr>
+            <tr>
+                <td><b>Líder:</b> Optimus Prime</td>
+            </tr>
+            <tr>
+                <td><audio controls > <source src="img/optimus.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+        </table>
+        <h2 id="sub2">Información General</h2>
+        <pre class="texto">
+            Los Autobots son un grupo generalmente heroico y honorable, que tiende a ser dedicado a la paz, sintiendo
+            la necesidad de proteger a otras razas de los Decepticons. Como resultado, suelen ser los Transformers que 
+            cambian a aquellos modos alternos no orientados al combate tales como vehículos domésticos, automóviles, 
+            camiones o vehículos de rescate. Sin embargo, esto no es siempre el caso, ya que las necesidades de la guerra 
+            han llevado a muchos a adoptar formas alternativas orientadas al combate. Mientras que los Autobots se han 
+            encontrado generalmente en desventaja numérica contra los Decepticons, los Autobots siempre han obtenido la 
+            ventaja de local, teniendo no sólo el apoyo militar de los humanos, sino también el de tener más lugares de la 
+            Tierra a los que recurrir, mientras que los Decepticons son del todo indeseables en la Tierra.
+
+            Los conceptos clave que se repiten a lo largo de la mayoría de las continuidades son el uso del nombre Prime (o 
+            una variante del mismo) para denotar liderazgo Autobot, y la existencia de un artefacto de gran poder que da vida, 
+            normalmente conocido como "Matriz", tradicionalmente en manos de su líder.
+        </pre>
+        <h2 id="sub2">Miembros</h2>
+        <pre class="texto">
+            A lo largo de los años, la alineación principal ha estado conformada por distintos autobots en las diversas 
+            adaptaciones de la franquicia, sin embargo hay algunos que destacan y se mantienen en la formación guía de
+            los autobots.
+        </pre>      
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <img src="img/1.png" class="carousel-image" alt="Autobot 1">
+                <img src="img/2.png" class="carousel-image" alt="Autobot 2">
+                <img src="img/3.png" class="carousel-image" alt="Autobot 3">
+                <img src="img/4.png" class="carousel-image" alt="Autobot 4">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <pre class="texto"><br></pre>
+</body>
+</html>
