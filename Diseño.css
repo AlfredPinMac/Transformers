@@ -1,0 +1,276 @@
+/* Estilos del menú */
+.menu {
+  background-color:#090921;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  position: relative;
+}
+
+li a {
+  display: block;
+  padding: 25px 50px;
+  color: white;
+  text-decoration: none;
+  font-family: Transformers;
+  font-size: 20px;
+  text-align: left;
+}
+
+li a:hover {
+  background-color: #DA1212;
+}
+
+/* Estilos del submenú */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(4, 21, 98);
+  min-width: 150px;
+  box-shadow: 0px 5px 10px #11468F;
+  font-size: 20px;
+  
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px;
+  display: block;
+}
+
+/* Mostrar submenú al pasar el mouse */
+li:hover .submenu {
+  display: block
+}
+
+@font-face {
+  font-family: 'Transformers';
+  src: url('transformers_movie/Transformers\ Movie.ttf');
+}
+
+.banner {
+  width: 250px;
+}
+
+body{
+  background-image: url(img/fondo1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fondo1{
+  background-image: url(img/fondo2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fondo2{
+  background-image: url(img/fondo3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cuerpo { 
+  padding-top: 55px;
+  background-color: rgba(238,238,238,0.82);
+  width: 120%;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.titulo {
+  padding-top: 10px;
+  background-color: #041562;
+  font-family: Transformers;
+  color: rgba(238,238,238);
+  height: 50px;
+}
+
+.titulo2 {
+  padding-top: 10px;
+  background-color: #490F63;
+  font-family: Transformers;
+  color: rgba(238,238,238);
+  height: 50px;
+}
+
+.texto{
+  text-align: justify;
+  color: #041562;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagenes{
+  text-align: center;
+  width: 60%;
+  height: 40%;
+}
+
+#sub1{
+  background-color: #11468F;
+  color: rgba(238,238,238);
+}
+
+#sub2{
+  color: #11468F;
+  text-align: left;
+  padding-left: 50px;
+  font-family: Transformers;
+}
+
+#sub22{
+  color: #9547ac;
+  text-align: left;
+  padding-left: 50px;
+  font-family: Transformers;
+}
+
+.tabla {
+  width: 30%;
+  margin: 20px auto; 
+  border-collapse: collapse;
+  text-align: center;
+}
+.tabla th, .tabla td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#auto {
+  background-color: #041562;
+  font-family: Transformers;
+  color: rgba(238,238,238);
+  font-size: 20px;
+}
+
+#decep {
+  background-color: #490F63;
+  font-family: Transformers;
+  color: rgba(238,238,238);
+  font-size: 20px;
+}
+
+td{  
+  background-color: rgba(238,238,233);
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.comentarios-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.comentarios-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.comentarios-form input, .comentarios-form select, .comentarios-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #041562;
+  border-radius: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.comentarios-form button {
+  background-color: #041562;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comentarios-form button:hover {
+  background-color: #DA1212;
+}
+
+#pregunta{
+  color: #11468F;
+  text-align: left;
+  padding-left: 50px;
+  font-family: Transformers;
+}
+

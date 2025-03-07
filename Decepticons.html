@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decepticons</title>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link  rel="stylesheet" type="text/css" href="Diseño.css">
+</head>
+
+<script>
+    let index = 0;
+    function moveSlide(step) {
+        const carousel = document.querySelector(".carousel");
+        const images = document.querySelectorAll(".carousel-image");
+        index = (index + step + images.length) % images.length;
+        carousel.style.transform = `translateX(${-index * 100}%)`;
+    }
+</script>
+
+<body class="fondo1">
+    
+    <!-- Menú de la página -->
+    <div class="menu">
+        <ul>
+            <a href="Principal.html"><img id="banner" class="banner" src="img/banner.png"></a>
+            <li>
+                <a href="#">Facciones</a>
+                <ul class="submenu">
+                    <li><a href="Autobots.html"><img id="icon" class="icon" src="img/auto.png"> Autobots</a></li>
+                    <li><a href="Decepticons.html"><img id="icon" class="icon" src="img/decep.png"> Decepticons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Peliculas.html">Películas</a>
+            </li>
+            <li><a href="Comentarios.html">Comentarios</a></li>
+            
+        </ul>
+    </div>
+    <!-- Fin menú -->
+     <div class="cuerpo">
+        <h1 class="titulo2">Decepticons</h1>
+        <pre class="texto">
+            Los Decepticons son una facción de robots guerreros del planeta Cybertron al mando de Megatron. Ellos 
+            lucharon por miles de años contra sus enemigos mortales, <a href="Autobots.html">Autobots</a> (liderados por Optimus Prime), hasta la batalla
+            de Chicago, en donde aparentemente eliminaron a todos los Decepticons.
+        </pre>
+        <table class="tabla">
+            <tr>
+                <th id="decep">Insignia Decepticon</th>
+            </tr>
+            <tr>
+                <td><img width="100px" height="100px" src="img/deceplogo.png"></td>
+            </tr>
+            <tr>
+                <td><b>Líder:</b> Megatron</td>
+            </tr>
+            <tr>
+                <td><audio controls > <source src="img/megatron.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+        </table>
+        <h2 id="sub22">Información General</h2>
+        <pre class="texto">
+            Los Decepticons son una facción de villanos ficticios de robots sensibles en la franquicia multimedia Transformers,
+            y los cómics y dibujos animados relacionados.​Líderados por Megatron, ellos se preocupan por cosas como 
+            conquistar Cybertron, derrotar a los Autobots, acumular grandes cantidades de energon, desarrollar armamento 
+            poderoso y causar estragos globales. Son una raza malévola de guerreros robot, brutales y despiadados, y están 
+            liderados por un único objetivo inquebrantable: la dominación total del universo.
+        </pre>
+        <h2 id="sub22">Miembros</h2>
+        <pre class="texto">
+            A diferencia de los Autobots, cuyo líder es un portador de una matriz, los Decepticons son guiados por el más 
+            poderoso de sus filas (generalmente Megatron). Esto tiende a causar algún conflicto, teniendo en cuenta lo general, 
+            todos los Decepticon creen que son los más poderosos. Además, los Decepticons no son exactamente los seres más 
+            compasivos en el universo, pero no todos luchan por la codicia. Más que unos pocos tienen un sentido del honor, 
+            mientras que otros creen que Cybertron estaría mejor protegido por la expansión agresiva. En última instancia, 
+            los Decepticons desean proteger a su planeta natal, aunque sea a costa de los demás.
+        </pre>      
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <img src="img/5.png" class="carousel-image" alt="Autobot 1">
+                <img src="img/6.png" class="carousel-image" alt="Autobot 2">
+                <img src="img/7.png" class="carousel-image" alt="Autobot 3">
+                <img src="img/8.png" class="carousel-image" alt="Autobot 4">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <pre class="texto"><br></pre>
+</body>
+</html>

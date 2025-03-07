@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link  rel="stylesheet" type="text/css" href="Diseño.css">
+</head>
+<body>
+     <!-- Menú de la página -->
+     <div class="menu">
+        <ul>
+            <a href="Principal.html"><img id="banner" class="banner" src="img/banner.png"></a>
+            <li>
+                <a href="#">Facciones</a>
+                <ul class="submenu">
+                    <li><a href="Autobots.html"><img id="icon" class="icon" src="img/auto.png"> Autobots</a></li>
+                    <li><a href="Decepticons.html"><img id="icon" class="icon" src="img/decep.png"> Decepticons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Peliculas.html">Películas</a>
+            </li>
+            <li><a href="Comentarios.html">Comentarios</a></li>
+            
+        </ul>
+    </div>
+    <!-- Fin menú -->
+    <div class="cuerpo" >
+        <h1 class="titulo">Deja tu comentario</h1>
+                
+                <form class="comentarios-form" action="#" method="post">
+                    <label id="pregunta" for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+        
+                    <label id="pregunta" for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+        
+                    <label id="pregunta" for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" required>
+
+                    <label id="pregunta" for="transformer">¿Quién es tu Transformer favorito?</label>
+                    <select id="transformer" name="transformer">
+                        <option value="Optimus Prime">Optimus Prime</option>
+                        <option value="Bumblebee">Bumblebee</option>
+                        <option value="Ironhide">Wheeljack</option>
+                        <option value="Ratchet">Ratchet</option>
+                        <option value="Megatron">Megatron</option>
+                        <option value="Starscream">Starscream</option>
+                        <option value="Soundwave">Soundwave</option>
+                        <option value="Shockwave">Shockwave</option>
+                    </select>
+
+                    <label id="pregunta">¿Cuál es tu película favorita?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="peli1" name="pelicula" value="Transformers 2007">
+                        <label for="peli1">Transformers (2007)</label>
+        
+                        <input type="checkbox" id="peli2" name="pelicula" value="Revenge of the Fallen">
+                        <label for="peli2">Revenge of the Fallen (2009)</label>
+        
+                        <input type="checkbox" id="peli3" name="pelicula" value="Dark of the Moon">
+                        <label for="peli3">Dark of the Moon (2011)</label>
+        
+                        <input type="checkbox" id="peli4" name="pelicula" value="Age of Extinction">
+                        <label for="peli4">Age of Extinction (2014)</label>
+        
+                        <input type="checkbox" id="peli5" name="pelicula" value="The Last Knight">
+                        <label for="peli5">The Last Knight (2017)</label>
+                    </div>
+        
+                    <label id="pregunta" for="calificacion">Calificación de la película (1-10):</label>
+                    <input type="number" id="calificacion" name="calificacion" min="1" max="10" required>
+        
+                    <label id="pregunta" for="comentario">Compartenos tu opinión:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+                <pre class="texto"><br></pre>
+            </div>
+        
+        </body>
+        </html>
+        
+
+</body>
+</html>
